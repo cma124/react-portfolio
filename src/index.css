@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-base: "Inter", Poppins, sans-serif;
+
+  --color-primary: #ffc86b;
+  --color-lightprimary: #f0bf6c;
+  --color-secondary: #34353a;
+  --color-lightblack: #3d3e42;
+  --color-mediumblack: #5d5e61;
+  --color-darkblack: #31333b;
+}
+
+@layer base {
+  body {
+    @apply font-base text-base text-white overflow-x-hidden;
+  }
+
+  h1 {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+  }
+
+  h2 {
+    @apply leading-normal font-semibold text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+  }
+
+  h3 {
+    @apply leading-normal md:text-lg lg:text-xl xl:text-2xl;
+  }
+
+  h4 {
+    @apply leading-normal lg:text-lg;
+  }
+
+  p,
+  li {
+    @apply leading-relaxed;
+  }
+
+  a {
+    @apply hover:text-primary transition-all duration-300;
+  }
+
+  ul {
+    @apply list-disc ps-4;
+  }
+}
+
+@layer components {
+  /* General */
+  .layout {
+    @apply border-b border-primary space-y-6 p-10 sm:px-16 lg:px-20;
+  }
+
+  .social-links {
+    a {
+      @apply hover:scale-125;
+    }
+  }
+
+  /* Hero Section */
+  .navbar-layout {
+    @apply bg-secondary fixed z-10 top-0 start-0 end-0 shadow-sm px-10 py-4 sm:px-16 lg:px-20;
+  }
+
+  .profile-layout {
+    @apply mt-12 flex flex-col-reverse justify-center items-center gap-10 lg:flex-row lg:gap-12 xl:gap-16;
+  }
+
+  .mobile-navbar {
+    @apply bg-darkblack/95 fixed top-0 left-0 w-full pt-16 transition-all duration-500 lg:hidden;
+  }
+
+  .hero-btn {
+    @apply block mx-auto lg:inline lg:me-5 text-primary border-[3px] border-primary rounded-md lg:text-lg;
+
+    a {
+      @apply block w-full h-full px-5 py-2 hover:cursor-pointer hover:bg-primary hover:text-white transition-all duration-300;
+    }
+  }
+
+  .profile-name {
+    @apply text-primary font-semibold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl;
+  }
+
+  .profile-role {
+    @apply font-normal text-lg md:text-xl lg:text-2xl xl:text-3xl;
+  }
+
+  .profile-img-box {
+    @apply bg-lightblack aspect-square border-4 border-lightprimary rounded-full overflow-hidden shadow-lightprimary shadow-sm w-3xs sm:w-2xs md:w-xs lg:w-sm xl:w-md hover:shadow-lg transition-all duration-300 flex items-end justify-center;
+  }
+
+  .profile-img {
+    @apply aspect-square w-[92%];
+  }
+
+  .hero-social-links {
+    @apply self-center flex flex-col items-center gap-5 md:gap-6;
+  }
+
+  /* About Section */
+  .about-layout {
+    @apply flex flex-col items-center gap-3 md:flex-row md:items-start;
+  }
+
+  .skill-layout {
+    @apply flex justify-center gap-5 flex-wrap 2xl:px-[10%];
+  }
+
+  .skill-card {
+    @apply bg-lightblack rounded-md py-5 text-center text-[10px] sm:text-xs min-w-24 sm:min-w-28
+    flex flex-col items-center justify-center gap-4 hover:bg-primary transition-all duration-500;
+  }
+
+  .skill-card img {
+    @apply aspect-square w-5 sm:w-7 lg:w-10;
+  }
+
+  /* Experience Section */
+  .experience-layout {
+    @apply space-y-10 px-5 md:px-12 lg:px-24 xl:px-48 2xl:px-72;
+  }
+
+  /* Portfolio Section */
+  .portfolio-layout {
+    @apply grid gap-5 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4;
+
+    div:first-child .project-card .project-img-container img {
+      @apply w-1/2;
+    }
+
+    div:last-child .project-card .project-img-container {
+      @apply bg-gray-900;
+    }
+  }
+
+  .project-card {
+    @apply bg-lightblack rounded-md p-5 border-2 border-lightblack hover:border-primary transition-all duration-300 flex flex-col items-start gap-5;
+
+    h3 {
+      @apply leading-normal text-lg font-semibold;
+    }
+
+    h4,
+    p,
+    a {
+      @apply leading-normal text-base;
+    }
+  }
+
+  .project-card:hover {
+    img {
+      @apply scale-105;
+    }
+  }
+
+  .project-img-container {
+    @apply self-stretch bg-white h-64 overflow-hidden rounded-md flex justify-center items-center;
+
+    img {
+      @apply h-full object-scale-down transition-all duration-300;
+    }
+  }
+
+  .project-skill-layout {
+    @apply flex items-center flex-wrap gap-3;
+  }
+
+  .project-skill-card {
+    @apply px-3 py-1 rounded-lg bg-darkblack;
+  }
+
+  .project-links {
+    @apply flex items-center gap-5;
+
+    a {
+      @apply text-2xl hover:scale-125;
+    }
+  }
+
+  .more-projects-btn {
+    @apply bg-lightblack text-lg px-8 py-3 rounded-lg border-2 border-white hover:bg-primary hover:text-white hover:border-primary;
+  }
+
+  /* Certificates Section */
+  .certificate-layout {
+    @apply space-y-5 gap-x-5 lg:grid lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4;
+  }
+
+  .certificate-card {
+    @apply bg-lightblack rounded-md p-5 flex gap-5 hover:scale-[102%] transition-all duration-300;
+
+    h3 {
+      @apply leading-normal text-lg font-semibold;
+    }
+
+    h4 {
+      @apply leading-normal text-base;
+    }
+  }
+
+  .certificate-btn {
+    @apply text-center text-sm border-2 rounded-md px-4 py-2 hover:bg-primary hover:text-white hover:border-primary;
+  }
+
+  /* Contact Section */
+  .contact-box {
+    @apply bg-darkblack w-fit border-2 rounded-md shadow-lg flex justify-center items-center gap-3 px-5 py-3;
+  }
+
+  a.contact-box {
+    @apply hover:scale-105;
+  }
+
+  .contact-layout {
+    @apply flex flex-col justify-center items-center gap-10 lg:flex-row lg:items-start lg:gap-16 xl:gap-24 2xl:gap-32;
+  }
+
+  .form-layout {
+    @apply space-y-8 w-full max-w-sm sm:w-auto sm:max-w-none sm:min-w-sm lg:min-w-xs xl:min-w-sm;
+  }
+
+  .form-card {
+    @apply flex flex-col justify-stretch items-stretch gap-2;
+
+    input,
+    textarea {
+      @apply text-sm bg-darkblack px-3 py-2 rounded-md;
+    }
+  }
+
+  .form-btn {
+    @apply block w-full py-3 text-center rounded-md bg-darkblack hover:cursor-pointer hover:bg-primary transition-all duration-300;
+  }
+
+  /* Footer Section */
+  .footer-layout {
+    @apply flex justify-center items-center gap-7;
+  }
+}
