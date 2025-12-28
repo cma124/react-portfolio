@@ -137,7 +137,7 @@
   }
 
   .project-card {
-    @apply bg-lightblack rounded-md p-5 border-2 border-lightblack hover:border-primary transition-all duration-300 flex flex-col items-start gap-5;
+    @apply bg-lightblack rounded-md h-full p-5 border-2 border-lightblack hover:border-primary transition-all duration-300 flex flex-col items-start gap-5;
 
     h3 {
       @apply leading-normal text-lg font-semibold;
