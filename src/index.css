@@ -190,7 +190,7 @@
   }
 
   .certificate-card {
-    @apply bg-lightblack rounded-md p-5 flex gap-5 hover:scale-[102%] transition-all duration-300;
+    @apply bg-lightblack rounded-md h-full p-5 flex gap-5 hover:scale-[102%] transition-all duration-300;
 
     h3 {
       @apply leading-normal text-lg font-semibold;

@@ -75,15 +75,12 @@ const ContactSection = () => {
       <div className="contact-layout">
         <div className="space-y-6">
           <div className="flex flex-col justify-center items-center md:flex-row gap-6">
-            <a
-              data-aos="fade-up"
-              data-aos-delay="1000"
-              href="tel:+66654416884"
-              className="contact-box"
-            >
-              <FaPhone />
-              <p className="text-primary">(+66) 654 416 884</p>
-            </a>
+            <div data-aos="fade-up" data-aos-delay="1000">
+              <a href="tel:+66654416884" className="contact-box">
+                <FaPhone />
+                <p className="text-primary">(+66) 654 416 884</p>
+              </a>
+            </div>
 
             <div
               data-aos="fade-up"
@@ -95,15 +92,15 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <a
-            data-aos="fade-up"
-            data-aos-delay="1600"
-            href="mailto:chan.myae.a.099@gmail.com"
-            className="contact-box mx-auto"
-          >
-            <FaEnvelope />
-            <p className="text-primary">chan.myae.a.099@gmail.com</p>
-          </a>
+          <div data-aos="fade-up" data-aos-delay="1600">
+            <a
+              href="mailto:chan.myae.a.099@gmail.com"
+              className="contact-box mx-auto"
+            >
+              <FaEnvelope />
+              <p className="text-primary">chan.myae.a.099@gmail.com</p>
+            </a>
+          </div>
         </div>
 
         <form

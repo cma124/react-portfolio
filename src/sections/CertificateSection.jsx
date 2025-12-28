@@ -71,41 +71,38 @@ const CertificateSection = () => {
       <div className="certificate-layout">
         {certificates.length &&
           certificates.map((certificate, index) => (
-            <div
-              key={index}
-              data-aos="fade"
-              data-aos-delay={300 * (index + 1)}
-              className="certificate-card"
-            >
-              <div className="pt-1 text-2xl text-primary">
-                {certificate.issuedFrom === "Microsoft" && <FaMicrosoft />}
-                {certificate.issuedFrom === "freeCodeCamp" && (
-                  <FaFreeCodeCamp />
-                )}
-                {certificate.issuedFrom !== "Microsoft" &&
-                  certificate.issuedFrom !== "freeCodeCamp" && (
-                    <FaCertificate />
+            <div key={index} data-aos="fade" data-aos-delay={300 * (index + 1)}>
+              <div className="certificate-card">
+                <div className="pt-1 text-2xl text-primary">
+                  {certificate.issuedFrom === "Microsoft" && <FaMicrosoft />}
+                  {certificate.issuedFrom === "freeCodeCamp" && (
+                    <FaFreeCodeCamp />
                   )}
-              </div>
+                  {certificate.issuedFrom !== "Microsoft" &&
+                    certificate.issuedFrom !== "freeCodeCamp" && (
+                      <FaCertificate />
+                    )}
+                </div>
 
-              <div className="grow flex flex-col justify-between gap-3">
-                <h3>{certificate.certificate}</h3>
+                <div className="grow flex flex-col justify-between gap-3">
+                  <h3>{certificate.certificate}</h3>
 
-                <div className="flex justify-between items-center">
-                  <div>
-                    <h4>{certificate.issuedFrom}</h4>
-                    <h4 className="mt-2 text-gray-400">
-                      {certificate.issuedDate}
-                    </h4>
+                  <div className="flex justify-between items-center">
+                    <div>
+                      <h4>{certificate.issuedFrom}</h4>
+                      <h4 className="mt-2 text-gray-400">
+                        {certificate.issuedDate}
+                      </h4>
+                    </div>
+
+                    <a
+                      href={certificate.link}
+                      target="_blank"
+                      className="certificate-btn"
+                    >
+                      View
+                    </a>
                   </div>
-
-                  <a
-                    href={certificate.link}
-                    target="_blank"
-                    className="certificate-btn"
-                  >
-                    View
-                  </a>
                 </div>
               </div>
             </div>
