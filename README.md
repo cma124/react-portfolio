@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with **React**, **Tailwind CSS**, and **AOS**. This project showcases my work, skills, experience, projects, and provides a direct line of communication via an integrated contact form.
 
-[View Live Demo](https://chanmyaeaung.netlify.app)
+[View Live Demo](https://chanmyaeaung124.netlify.app)
 
 ![Portfolio Preview](./public/portfolio-preview.png)
 
