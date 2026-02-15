@@ -3,16 +3,28 @@ import ExperienceCard from "../components/ExperienceCard";
 const ExperienceSection = () => {
   const experience = [
     {
+      position: "Power Apps Developer",
+      company: "BIM Group of Companies",
+      period: "Feb 2026 - Present",
+      description: [
+        "Designed, developed, and maintained multiple end-to-end Power Platform solutions independently, covering requirement analysis, implementation, testing, and deployment.",
+        "Architected and implemented data storage solutions using SharePoint and Dataverse, ensuring scalable, secure, and maintainable application designs.",
+        "Built and automated business applications using Power Apps and Power Automate, reducing manual processes and improving operational efficiency.",
+        "Developed multi-step approval workflows and applications, incorporating role-based access and validation with a strong focus on security and maintainability.",
+        "Collaborated directly with customers and stakeholders to gather requirements, proposed technical solutions, and delivered enhancements aligned with business needs.",
+        "Provided ongoing application support, issue resolution, and enhancements for live projects, ensuring system stability and user satisfaction.",
+      ],
+    },
+    {
       position: "Junior Power Apps Developer",
       company: "BIM Group of Companies",
-      period: "Jun 2025 - Present",
+      period: "Jun 2025 - Jan 2026",
       description: [
         "Designed and developed business applications using Power Apps, Power Automate, and Microsoft SharePoint, delivering scalable and user-friendly solutions.",
         "Partnered with stakeholders to gather requirements and translate business needs into optimized apps, automated workflows, and integrated APIs.",
         "Developed and maintained data sources with SharePoint and Dataverse to improve system performance, storage, and reliability.",
         "Integrated third-party APIs and data services to extend app functionality using Power Automate flows and Connectors (standard and custom).",
         "Developed a custom PDF view using HTML and CSS, and implemented SharePoint and API integration flows in Power Automate to use data in JSON type coming from XML data source.",
-        "Built a Proforma Invoice App, reducing manual effort by 50% and improving finance process efficiency by 80%.",
         "Provided ongoing support, troubleshooting, and system optimization to ensure high availability and performance.",
       ],
     },
@@ -25,7 +37,7 @@ const ExperienceSection = () => {
         "Troubleshot and enhanced Model-Driven Apps and CRM features by resolving issues and optimizing features.",
         "Designed, built, and maintained standard and custom CRM features using Power Apps, Power Automate, Dynamics 365, and Microsoft Dataverse.",
         "Integrated third-party APIs and Microsoft services (Teams) into CRM solutions to extend system capabilities.",
-        "Optimized process flows for an Insurance CRM project handling 500+ daily transactions, improving system performance by 40% and reducing error rates by 15%.",
+        "Optimized process flows for an Insurance CRM project handling 500+ daily transactions by improving system performance.",
         "Developed custom UI components and extended CRM functionalities using JavaScript and Tailwind CSS, resulting improved usability and user experience.",
       ],
     },
