@@ -4,6 +4,14 @@ const CertificateSection = () => {
   const certificates = [
     {
       certificate:
+        "Microsoft Applied Skills: Create agents in Microsoft Copilot Studio",
+      link: "https://learn.microsoft.com/api/credentials/share/en-us/ChanMyaeAung-7935/6DE6BBACBC3501F3?sharingId=9B6E077C99F1B662",
+      issuedFrom: "Microsoft",
+      issuedDate: "Mar 2026",
+    },
+    
+    {
+      certificate:
         "Microsoft Applied Skills: Create and manage automated processes by using Power Automate",
       link: "https://learn.microsoft.com/api/credentials/share/en-us/ChanMyaeAung-7935/BC3DD263BCF8E7AF?sharingId",
       issuedFrom: "Microsoft",
