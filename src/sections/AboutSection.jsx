@@ -62,8 +62,8 @@ const AboutSection = () => {
 
           <p className="text-center md:text-start lg:text-lg">
             I am Chan Myae Aung, a{" "}
-            <span className="text-primary">Software Developer</span> with over
-            one year of experience in business application development using{" "}
+            <span className="text-primary">Software Developer</span> with two
+            years of experience in business application development using{" "}
             <span className="text-primary">Microsoft Power Platform</span>,
             along with hands-on full-stack web development experience using{" "}
             <span className="text-primary">React, Node.js, and Laravel</span>. I
