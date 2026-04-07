@@ -82,14 +82,14 @@ const ContactSection = () => {
               </a>
             </div>
 
-            <div
+            {/* <div
               data-aos="fade-up"
               data-aos-delay="1300"
               className="contact-box"
             >
               <FaLocationDot />
               <p className="text-primary">Bangkok, Thailand</p>
-            </div>
+            </div> */}
           </div>
 
           <div data-aos="fade-up" data-aos-delay="1600">
