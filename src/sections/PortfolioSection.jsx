@@ -17,7 +17,7 @@ const PortfolioSection = () => {
       project_text:
         "A proforma invoice approval application built for Sales and Finance teams to streamline invoice submission, review, and approval workflows.",
       roles: [
-        "Designed the data storage schema",
+        "Designed and implemented the data storage",
         "Developed user-friendly interfaces",
         "Created customized PDF templates using HTML and CSS",
         "Built in-app approval workflow",
@@ -41,7 +41,7 @@ const PortfolioSection = () => {
       project_text:
         "An assessment application for multiple departments, featuring both user and admin views to take and manage assessments efficiently.",
       roles: [
-        "Designed the data storage schema",
+        "Designed and implemented the data storage",
         "Developed user and admin interfaces",
         "Implemented file content viewing from SharePoint libraries",
         "Built Power Automate flows to retrieve PDF content",
@@ -56,12 +56,11 @@ const PortfolioSection = () => {
       project_img: GRG,
       project_title: "GRG IT Asset Management App",
       project_text:
-        "An IT asset management application developed for GRG to manage and track organizational IT assets.",
+        "Developed internal applications, including IT Asset Management App and Enterprise Risk Management App.",
       roles: [
-        "Contributed to the Asset Replacement feature",
-        "Designed the data storage schema for asset replacement",
+        "Designed and implemented the data storage",
         "Developed user-friendly interfaces",
-        "Built automated approval workflows",
+        "Built in-app and automated approval workflows",
         "Implemented email notifications",
         "Enabled Excel file generation",
       ],
