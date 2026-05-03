@@ -5,6 +5,7 @@ const ExperienceSection = () => {
     {
       position: "Power Apps Developer",
       company: "BIM Group of Companies",
+      companyLink: "https://bimgoc.com/",
       period: "Feb 2026 - Present",
       description: [
         "Designed, developed, and maintained multiple end-to-end Power Platform solutions independently, covering requirement analysis, implementation, testing, and deployment.",
@@ -18,6 +19,7 @@ const ExperienceSection = () => {
     {
       position: "Junior Power Apps Developer",
       company: "BIM Group of Companies",
+      companyLink: "https://bimgoc.com/",
       period: "Jun 2025 - Jan 2026",
       description: [
         "Designed and developed business applications using Power Apps, Power Automate, and Microsoft SharePoint, delivering scalable and user-friendly solutions.",
@@ -31,6 +33,7 @@ const ExperienceSection = () => {
     {
       position: "Junior CRM Developer",
       company: "BIM Group of Companies",
+      companyLink: "https://bimgoc.com/",
       period: "Aug 2024 - Jan 2025",
       description: [
         "Developed and optimized Power Automate flows to streamline business operations and reduce manual workload.",
@@ -44,6 +47,7 @@ const ExperienceSection = () => {
     {
       position: "Power Platform Intern (Power Apps)",
       company: "BIM Group of Companies",
+      companyLink: "https://bimgoc.com/",
       period: "May 2024 - July 2024",
       description: [
         "Developed an internal Expense Claim App using Power Apps, Power Automate, and Microsoft SharePoint.",
@@ -74,6 +78,7 @@ const ExperienceSection = () => {
               <ExperienceCard
                 position={exp.position}
                 company={exp.company}
+                companyLink={exp.companyLink}
                 period={exp.period}
                 description={exp.description}
               />

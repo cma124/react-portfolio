@@ -1,4 +1,10 @@
-const ExperienceCard = ({ position, company, period, description }) => {
+const ExperienceCard = ({
+  position,
+  company,
+  companyLink,
+  period,
+  description,
+}) => {
   return (
     <div className="flex justify-start items-stretch gap-7">
       <div className="pb-8">
@@ -8,7 +14,19 @@ const ExperienceCard = ({ position, company, period, description }) => {
 
       <div className="space-y-2">
         <h3 className="font-semibold">{position}</h3>
-        <h4>{company}</h4>
+        <h4>
+          {!companyLink ? (
+            company
+          ) : (
+            <a
+              href={companyLink}
+              target="_blank"
+              className="underline"
+            >
+              {company}
+            </a>
+          )}
+        </h4>
         <h4 className="text-gray-400">{period}</h4>
 
         <ul>
