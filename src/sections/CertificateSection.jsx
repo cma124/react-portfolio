@@ -5,7 +5,7 @@ const CertificateSection = () => {
     {
       certificate:
         "Microsoft Applied Skills: Build an agent in Microsoft Copilot Studio",
-      link: "https://learn.microsoft.com/api/credentials/share/en-us/ChanMyaeAung-7935/CBFFE14FFD5F5512?sharingId=9B6E077C99F1B662",
+      link: "https://learn.microsoft.com/api/credentials/share/en-us/ChanMyaeAung-7935/18440FA15DC02055?sharingId=9B6E077C99F1B662",
       issuedFrom: "Microsoft",
       issuedDate: "Oct 2026",
     },
