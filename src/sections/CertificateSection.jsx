@@ -4,6 +4,14 @@ const CertificateSection = () => {
   const certificates = [
     {
       certificate:
+        "Microsoft Applied Skills: Build an agent in Microsoft Copilot Studio",
+      link: "https://learn.microsoft.com/api/credentials/share/en-us/ChanMyaeAung-7935/CBFFE14FFD5F5512?sharingId=9B6E077C99F1B662",
+      issuedFrom: "Microsoft",
+      issuedDate: "Oct 2026",
+    },
+
+    {
+      certificate:
         "Microsoft Applied Skills: Create and manage model-driven apps with Power Apps and Dataverse",
       link: "https://learn.microsoft.com/api/credentials/share/en-us/ChanMyaeAung-7935/CBFFE14FFD5F5512?sharingId=9B6E077C99F1B662",
       issuedFrom: "Microsoft",
